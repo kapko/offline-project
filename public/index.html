@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="app">
+<head>
+	<title>index</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="./css/angular.css">
+	<link rel="stylesheet" href="custom.css">
+</head>
+<body  ng-controller="app">
+	<md-content class="md-padding">
+		<md-nav-bar md-selected-nav-item="currentNavItem" nav-bar-aria-label="navigation links">
+			<md-nav-item md-nav-click="goto('page1')" name="page1">Page One</md-nav-item>
+			<md-nav-item md-nav-click="goto('page2')" name="page2">Page Two</md-nav-item>
+			<md-nav-item md-nav-click="goto('page3')" name="page3">Page Three</md-nav-item>
+		</md-nav-bar>
+	</md-content>
+
+	<section layout="row" flex layout-xs="column">
+
+		<div flex-lg="30"  style="background: red"> Left Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi voluptates delectus, modi ipsa dolore exercitationem velit quisquam necessitatibus! Deleniti architecto dolor eveniet recusandae in explicabo. Iure dignissimos sunt, laudantium! Ipsam.</div>
+
+		<div flex-lg="70"  layout="row" layout-align="center"  style="background: blue"> Right Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae facere eum molestiae vel expedita sequi! Maiores rem odio eum praesentium excepturi, quibusdam ratione quisquam harum expedita odit libero animi dolore.</div>
+
+	</section>
+
+	<script src="vendor.js"></script>
+	<script src="all.js"></script>
+</body>
+</html>
