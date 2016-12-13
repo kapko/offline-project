@@ -4,27 +4,44 @@
 	<title>index</title>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
 	<link rel="stylesheet" href="./css/angular.css">
-	<link rel="stylesheet" href="custom.css">
+	<link rel="stylesheet" href="./js/custom.css">
 </head>
 <body  ng-controller="app">
-	<md-content class="md-padding">
-		<md-nav-bar md-selected-nav-item="currentNavItem" nav-bar-aria-label="navigation links">
-			<md-nav-item md-nav-click="goto('page1')" name="page1">Page One</md-nav-item>
-			<md-nav-item md-nav-click="goto('page2')" name="page2">Page Two</md-nav-item>
-			<md-nav-item md-nav-click="goto('page3')" name="page3">Page Three</md-nav-item>
-		</md-nav-bar>
-	</md-content>
+
+	<md-toolbar 
+		md-colors="{background: 'deep-purple'}" 
+		layout="row">
+		<p flex="30" ><i class="material-icons" class="md-padding">menu</i></p>
+		<p flex="70">
+			<md-menu> 
+				<i 
+					style="float: right;" 
+					ng-click="$mdOpenMenu()" 
+					class="material-icons">person</i>
+	            <md-menu-content>
+		            <md-button  style="text-align: left;"><i class="material-icons">person</i> Profile</md-button>
+		            <md-button  style="text-align: left;"><i class="material-icons">person</i> Settings</md-button>
+		            <md-button  style="text-align: left;"><i class="material-icons">person</i> Credit card</md-button>
+	            </md-menu-content>
+	        </md-menu>
+        </p>
+	</md-toolbar>
+
 
 	<section layout="row" flex layout-xs="column">
 
-		<div flex-lg="30"  style="background: red"> Left Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi voluptates delectus, modi ipsa dolore exercitationem velit quisquam necessitatibus! Deleniti architecto dolor eveniet recusandae in explicabo. Iure dignissimos sunt, laudantium! Ipsam.</div>
+		<div flex-lg="30"> Left Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi voluptates delectus, modi ipsa dolore exercitationem velit quisquam necessitatibus! Deleniti architecto dolor eveniet recusandae in explicabo. Iure dignissimos sunt, laudantium! Ipsam.</div>
 
 		<div flex-lg="70"  layout="row" layout-align="center"  style="background: blue"> Right Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae facere eum molestiae vel expedita sequi! Maiores rem odio eum praesentium excepturi, quibusdam ratione quisquam harum expedita odit libero animi dolore.</div>
 
 	</section>
 
-	<script src="vendor.js"></script>
-	<script src="all.js"></script>
+	<script src="./js/vendor.js"></script>
+	<script src="./js/all.js"></script>
 </body>
 </html>
+
+
