@@ -3,5 +3,5 @@ import material from '../../bower_components/angular-material/angular-material.m
 
 let app = angular.module('app', ['ngMaterial']);
 app.controller('app', ($scope)=>{
-
+	
 })
